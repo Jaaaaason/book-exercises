@@ -1,0 +1,6 @@
+(define (sum-of-two a b c)
+  (if (and (< a b) (< a c))
+      (+ b c)
+      (if (> a b)
+	  (+ a c)
+	  (+ a b))))
