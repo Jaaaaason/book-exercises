@@ -35,6 +35,3 @@ C. show_bytes(valp, 3);
 
 Little endian: 21 43 65		Big endian: 87 65 43
 
-
-
-在 Mac OS Mojave 上测试了下，采用的是 Little endian
