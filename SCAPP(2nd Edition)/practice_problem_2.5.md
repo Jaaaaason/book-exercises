@@ -25,13 +25,13 @@ byte_pointer valp = (byte_pointer) &val;
 
 A. show_bytes(valp, 1);
 
-Little endian: 21	Big endian: 87
+Little endian: 21 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87
 
 B. show_bytes(valp, 2);
 
-Little endian: 21 43	Big endian: 87 65
+Little endian: 21 43 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65
 
 C. show_bytes(valp, 3);
 
-Little endian: 21 43 65		Big endian: 87 65 43
+Little endian: 21 43 65 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65 43
 
