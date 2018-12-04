@@ -1,5 +1,17 @@
 ### Consider the following three calls to show_bytes:
 
+Int val = 0x87654321;
+
+byte_pointer valp = (byte_pointer) &val;
+
+A. show_bytes(valp, 1);
+
+B. show_bytes(valp, 2);
+
+C. show_bytes(valp, 3);
+
+
+
 ```c
 typedef unsigned char *byte_pointer;
 
@@ -21,17 +33,13 @@ Big endian:
 
 ![](https://i.imgur.com/lyPNEAd.png)
 
-byte_pointer valp = (byte_pointer) &val;
 
-A. show_bytes(valp, 1);
 
-Little endian: 21 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87
 
-B. show_bytes(valp, 2);
 
-Little endian: 21 43 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65
+A. Little endian: 21 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87
 
-C. show_bytes(valp, 3);
+B. Little endian: 21 43 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65
 
-Little endian: 21 43 65 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65 43
+C. Little endian: 21 43 65 &nbsp;&nbsp;&nbsp;&nbsp; Big endian: 87 65 43
 
